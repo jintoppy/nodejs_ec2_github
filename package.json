@@ -2,7 +2,7 @@
   "name": "nodejs_ec2_github",
   "version": "",
   "scripts": {
-    "start": "node index",
+    "start": "nodemon index",
     "test": "mocha ./test/test.js"
   },
   "dependencies": {

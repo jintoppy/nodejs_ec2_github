@@ -1,0 +1,12 @@
+#!/bin/sh
+
+ssh ubuntu@52.66.133.31 <<EOF
+    cd ~/nodejs_ec2_github
+    git pull origin master
+    curl -o-   https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh    | bash
+    . ~/.nvm/nvm.sh
+    nvm install v10.11.0
+    npm install
+    npm start
+    exit
+EOF
