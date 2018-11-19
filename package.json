@@ -1,4 +1,15 @@
 {
   "name": "nodejs_ec2_github",
-  "version": ""
+  "version": "",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha ./test/test.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  }
 }
